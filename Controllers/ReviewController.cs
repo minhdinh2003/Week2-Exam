@@ -106,7 +106,7 @@ public class ReviewController(
             }
         });
 
-        await cacheService.SetAsync(cacheKey, reviews, TimeSpan.FromMinutes(10));
+        await cacheService.SetAsync(cacheKey, reviews, TimeSpan.FromMinutes(1));
         return Ok(result);
     }
 
