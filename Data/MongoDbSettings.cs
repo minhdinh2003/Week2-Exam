@@ -1,0 +1,10 @@
+using System;
+
+namespace QuanLySach.Data;
+
+
+public class MongoDbSettings
+{
+    public string ConnectionString { get; set; } = null!;
+    public string Database { get; set; } = null!;
+}
